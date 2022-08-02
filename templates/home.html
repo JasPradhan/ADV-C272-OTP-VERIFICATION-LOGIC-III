@@ -1,0 +1,37 @@
+
+
+<html>
+<head>
+<title>Home page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+</head>
+<body >
+
+<h1> OTP VERIFICATION</h1><hr>
+
+<form  name="login" action="/login" method="post"><br>
+    
+    <label>USERNAME</label>
+    <input  type="text" placeholder="username" name="username"><br>
+
+    <label>PASSWORD</label>
+    <input type="password" placeholder="password" name="password"><br>
+
+    <p>Mobile Number should be with Country code. e.g. +9173030xxxxx</p>
+    
+    <label>MOBILE NO</label>
+    <input type="tel"  placeholder="Mobile Number" name="number"><br>
+
+    <input  class="btn btn-primary btn-lg" type="submit" value="Get OTP" ><br><br>
+
+    
+
+</form>
+
+</body>
+</html>
+
+
